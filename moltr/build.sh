@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #export CC=/usr/local/opt/llvm/bin/clang++
-export CC==/usr/bin/g++
+export CC=/usr/bin/g++
 
 if [ -f "$CC" ]; then
 	"$CC" -c -fPIC argsort.cpp
