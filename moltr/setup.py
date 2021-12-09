@@ -8,7 +8,7 @@ exts = [Extension(name="lambdaobj",
                   libraries=["argsort"],
                   library_dirs=["."],
                   extra_compile_args=["-fopenmp", "-stdlib=libc++"],
-                  extra_link_args=["-lomp", "-L/usr/local/opt/libomp/lib/", "-stdlib=libc++"]
+                  extra_link_args=["-lomp", "-I/usr/lib/gcc/x86_64-linux-gnu/9/include/", "-L/usr/local/opt/libomp/lib/", "-stdlib=libc++"]
                   )]
 
 setup(ext_modules=cythonize(exts))
