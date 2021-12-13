@@ -7,7 +7,7 @@ exts = [Extension(name="lambdaobj",
                   sources=["lambdaobj.pyx"],
                   libraries=["argsort"],
                   library_dirs=["."],
-                  extra_compile_args=["-fopenmp"],
+                  extra_compile_args=["-fopenmp", "-I/usr/lib/gcc/x86_64-linux-gnu/9/include/"],
                   extra_link_args=["-lstdc++", "-fopenmp", "-L/usr/lib/gcc/x86_64-linux-gnu/9/include"]
                   )]
 
